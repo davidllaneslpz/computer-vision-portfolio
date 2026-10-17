@@ -1,0 +1,5 @@
+# x_pixel  y_pixel  x_real(cm)  y_real(cm)
+1452       1019     0.0         0.0         # Arriba Izquierda
+4890       977      29.7        0.0         # Arriba Derecha
+4518       2933     29.7        21.0        # Abajo Derecha
+1740       3005     0.0         21.0        # Abajo Izquierda

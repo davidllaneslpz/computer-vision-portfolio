@@ -1,0 +1,6 @@
+path: /home/llanesito/umucv-master/code/DL/yolotrain/datasets/mano
+train: images/train
+val: images/train
+
+names:
+  0: Mi_Mano
