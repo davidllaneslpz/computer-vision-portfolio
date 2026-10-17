@@ -67,6 +67,7 @@ wandb/
 *.tmp
 *.swp
 logs/
+Documentacion.pdf
 
 # IDE and operating system files
 .vscode/
