@@ -1,0 +1,31 @@
+# Core numerical and computer-vision stack
+numpy
+opencv-python
+Pillow
+
+# Course utilities used by the scripts
+umucv
+
+# YOLO and MediaPipe
+ultralytics
+mediapipe
+
+# Telegram alarm bot and environment configuration
+python-telegram-bot<20
+python-dotenv
+
+# Computer-vision and deep-learning exercises
+PyYAML
+matplotlib
+scipy
+scikit-learn
+scikit-image
+torch
+torchvision
+tensorflow
+keras
+transformers
+open-clip-torch
+rembg
+onnxruntime
+face-recognition
