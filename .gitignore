@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+*.env
+!.env.example
+!token.env.example
+
+# Computer vision model weights and exported models
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.onnx
+*.tflite
+*.h5
+*.keras
+*.engine
+*.safetensors
+
+# Local datasets and generated annotations
+datasets/
+data/raw/
+data/processed/
+train/images/
+train/labels/
+*.yolo.json
+
+# Video, image and numeric experiment outputs
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.mpeg
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.npy
+*.npz
+outputs/
+output/
+runs/
+wandb/
+
+# Logs and local reports
+*.log
+*.out
+*.tmp
+*.swp
+logs/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
