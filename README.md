@@ -1,18 +1,18 @@
-# Computer Vision Portfolio
+# Computer Vision Experiments
 
-A Python computer vision portfolio covering classical image processing, camera geometry, real-time video analysis, deep learning, and interactive vision systems.
+Python implementations of classical computer vision, camera geometry, real-time video processing, and deep-learning inference.
 
-The project combines OpenCV, YOLO11, MediaPipe, PyTorch, TensorFlow/Keras, and UMU computer-vision utilities across a collection of practical experiments and reusable pipelines.
+The code uses OpenCV, YOLO11, MediaPipe, PyTorch, TensorFlow/Keras, and UMU computer-vision utilities. Each directory contains focused scripts for a specific technique or processing pipeline.
 
-## Highlights
+## Contents
 
 - Camera calibration, undistortion, triangulation, and planar rectification
 - Motion detection, background subtraction, optical flow, and object tracking
-- Real-time object detection, tracking, and segmentation with YOLO11
+- Object detection, tracking, and segmentation with YOLO11
 - Hand, face, and human-pose analysis with MediaPipe
 - Image classification with SIFT, embeddings, CNNs, CLIP, and DINO
 - UNET segmentation and custom YOLO dataset labelling
-- Activity monitoring with ROI filtering, person anonymization, video recording, and Telegram alerts
+- ROI-based activity monitoring with person anonymization, video recording, and Telegram alerts
 
 ## Repository Structure
 
@@ -35,7 +35,7 @@ The project combines OpenCV, YOLO11, MediaPipe, PyTorch, TensorFlow/Keras, and U
 └── .gitignore
 ```
 
-The detailed assignment documentation is available in [Ejercicios/obligatorios/README.md](Ejercicios/obligatorios/README.md).
+Detailed descriptions and commands for the mandatory exercises are available in [Ejercicios/obligatorios/README.md](Ejercicios/obligatorios/README.md).
 
 ## Installation
 
@@ -61,9 +61,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Most real-time examples require a webcam or a video source. Some deep-learning examples also require downloading the corresponding model assets before execution.
+Most real-time examples require a webcam or a video source. Deep-learning examples may also require downloading the model asset referenced by the script.
 
-## Selected Examples
+## Examples
 
 ### YOLO11 object detection
 
@@ -79,17 +79,17 @@ python Ejercicios/code/DL/mp_hands/hands.py
 
 ### Activity monitoring
 
-Configure `TOKEN` and `USER_ID` in a local `Ejercicios/code/bot/token.env` file, then run:
+Create a local `Ejercicios/code/bot/token.env` file containing `TOKEN` and `USER_ID`, then run:
 
 ```bash
 python Ejercicios/code/bot/main.py
 ```
 
-The activity pipeline detects movement inside a manually selected ROI, runs YOLO only when needed, anonymizes detected people, records a short clip, and sends Telegram alerts when an authorized event is detected.
+This pipeline detects movement inside a manually selected ROI, runs YOLO when movement is present, anonymizes detected people, records a short clip, and sends Telegram alerts when a person overlaps the monitored region.
 
 ## Data, Models, and Secrets
 
-Large model files, generated media, datasets, logs, Python caches, and environment files are intentionally excluded from Git. Download model assets locally or use an external model registry. Never commit Telegram tokens, API keys, or other credentials.
+Model weights, generated media, datasets, logs, Python caches, and environment files are excluded from Git. Download model assets locally or use an external model registry. Never commit Telegram tokens, API keys, or other credentials.
 
 ## Documentation
 
@@ -99,4 +99,4 @@ Large model files, generated media, datasets, logs, Python caches, and environme
 
 ## License
 
-This repository is an academic and professional portfolio project. Add a project-specific license before distributing the code as a reusable library.
+No license has been selected for this codebase yet. Add a project-specific license before distributing the code as a reusable library.
